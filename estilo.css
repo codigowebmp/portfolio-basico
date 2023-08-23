@@ -1,0 +1,189 @@
+/* importamos la fuente */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #242639;
+    color: #fff;
+}
+header{
+    background-color: #212336;
+    padding: 20px;
+}
+header .contenido h1{
+    font-size: 20px;
+}
+header .contenido h1 span{
+    color: #fe4b57;
+}
+header .contenido{
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .contenido nav a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+}
+header .contenido nav a:hover{
+    color: #fe4b57;
+}
+/* secciòn inicio */
+section{
+    max-width: 900px;
+    margin: auto;
+    height: 90vh;
+    position: relative;
+    padding: 0 30px;
+}
+#inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#inicio h2{
+    font-weight: normal;
+    letter-spacing: 4px;
+    font-size: 35px;
+}
+#inicio p{
+    width: 300px;
+    font-size: 13px;
+    line-height: 24px;
+    color: #474853;
+    margin-bottom: 20px;
+}
+.btn{
+    background-color: #fe4b57;
+    color:#fff ;
+    border: none;
+    padding: 10px 30px;
+    width: fit-content;
+    text-align: center;
+    cursor: pointer;
+}
+/* sección habilidades */
+#habilidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.titulo{
+    color: #fe4b57;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+#habilidades hr{
+    width: 50px;
+    border: 2px solid #fe4b57;
+    margin-bottom: 10px;
+}
+#habilidades .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+#habilidades .fila .col{
+    width: 30%;
+    background-color: #2b2d41;
+    padding: 25px;
+}
+#habilidades .fila .col i{
+    color: #fe4b57;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#habilidades .fila .col h3{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+#habilidades .fila .col p{
+    font-size: 12px;
+    line-height: 20px;
+}
+/* sección contacto */
+#contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#contacto form{
+    max-width: 500px;
+}
+#contacto form .entrada{
+    width: 100%;
+    border: none;
+    background-color: #2b2d41;
+    padding: 25px;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+}
+footer{
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+}
+/* indicador */
+.indicador{
+    position: absolute;
+    right: 0;
+    padding-right: 0;
+}
+.indicador .selector{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #474853;
+}
+.indicador .linea{
+    width: 1px;
+    margin: auto;
+    background-color: #474853;
+    height: 30px;
+}
+.pintado{
+    background-color: #fe4b57;
+}
+.responsive{
+    display: none;
+}
+
+/* seccion responsive */
+@media screen and (max-width:600px){
+    section{
+        height: auto;
+    }
+    .responsive{
+        display: block;
+    }
+    .no-responsive{
+        display: none;
+    }
+    #inicio{
+        margin-top: 50px;
+    }
+    #habilidades{
+        margin-top: 50px;
+    }
+    #habilidades .fila{
+        display: block;
+    }
+    #habilidades .fila .col{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}
